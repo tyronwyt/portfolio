@@ -14,3 +14,19 @@ var menuToggle = document.getElementById('menu-toggle');
   document.getElementById('content').classList.toggle('closed-menu');
 
 };
+
+
+// Smooth scroll from link
+// $('a[href*="#"]:not([href="#"])').click(function() {
+//     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+//         var target = $(this.hash);
+//         target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+//         var element = target.offset().top - 60;
+//         if (target.length) {
+//             $('html, body').animate({
+//                 scrollTop: element
+//             }, 500);
+//             return false;
+//         }
+//     }
+// });
