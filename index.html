@@ -9,6 +9,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/modaal.css">
 </head>
 
 <body>
@@ -41,7 +42,7 @@
         <div class="mobile-nav">
             <ul>
                 <li><a data-scroll href="#home"><i class="fa fa-home icon"></i></a></li>
-                <li><a data-scroll href="#about"><i class="fa fa-commenting" style="padding-left: 7px;"></i></a></li>
+                <li><a data-scroll href="#about"><i class="fa fa-commenting"></i></a></li>
                 <li><a data-scroll href="#portfolio"><i class="fa fa-briefcase"></i></a></li>
                 <li><a data-scroll href="#contact"><i class="fa fa-envelope-o"></i></a></li>
             </ul>
@@ -138,25 +139,56 @@
 
 
             <div class="row no-spacing" style="background-color: #fff; padding: 50px;">
-              <h2>Portfolio</h2>
+              <div class="col-md-12">  <h2>Portfolio</h2></div>
+
 
                 <!-- <div class="col-md-12 no-spacing">
 
                 </div> -->
-
-                <div class="col-md-3" style="background-color: red; height: 200px">
-
+<div class="row">
+                <div class="col-md-3">
+                  <div class="card">
+                    <a href="http://www.spglobal.com">
+                      <img src="assets/images/porfolio_SPGlobal.png" alt="">
+                      <img src="assets/images/porfolio-logo_SPGlobal.png" alt="">
+                    </a>
+                  </div>
                 </div>
 
-                <div class="col-md-3" style="background-color: red; height: 200px">
-
+                <div class="col-md-3">
+                  <div class="card">
+                    <a href="assets/images/portfolio_LOEF-Showcase.pdf">
+                      <img src="assets/images/Porfolio-LOEF.png" alt="">
+                      <img src="assets/images/porfolio-logo_SPGlobal.png" alt="">
+                    </a>
+                  </div>
                 </div>
-                <div class="col-md-3" style="background-color: red; height: 200px">
 
-                </div>
-                <div class="col-md-3" style="background-color: red; height: 200px">
+                <div class="col-md-3">
+                  <div class="card">
+                    <a href="http://www.jha-recruitment.co.uk/">
+                      <img src="assets/images/porfolio_JHA.png" alt="">
+                      <img src="assets/images/porfolio-logo_JHA.png" alt="">
+                    </a>
 
+                  </div>
                 </div>
+
+                <div class="col-md-3">
+                  <div class="card">
+                    <a href="http://rugbyspy.com/">
+                      <img src="assets/images/porfolio_Rugbyspy.png" alt="">
+                      <img src="assets/images/porfolio-logo_Rugbyspy.png" alt="">
+
+                    </a>
+
+                  </div>
+                  <p class="caption">(Changed Since)</p>
+                </div>
+
+
+
+</div>
 
 
             </div>
@@ -167,23 +199,54 @@
             <a id="contact"></a>
 
 
-            <div class="row no-spacing" style="background-color: #fff; padding: 50px;">
-              <h2>Contact me</h2>
+            <div class="row no-spacing" style="color:#fff; padding: 50px;">
+              <div class="col-md-12 form">
+                <h2>Contact me</h2>
+              </div>
+<form action="mail.php" method="POST">
+              <div class="row">
+              <div class="col-md-6">
+                <div class="input-group">
+                  <label for="fullName">Full Name</label>
+                  <input type="text" class="form-control" id="fullName" name="name" placeholder="Full Name">
+                </div>
 
-              <form action="mail.php" method="POST">
-        <p>Name</p> <input type="text" name="name">
-        <p>Email</p> <input type="text" name="email">
-        <p>Message</p><textarea name="message" rows="6" cols="25"></textarea><br />
-        <input type="submit" value="Send"><input type="reset" value="Clear">
+                <div class="input-group">
+                  <label for="email">Email</label>
+                  <input type="text" class="form-control" id="email" name="email" placeholder="Email">
+                </div>
+
+              </div>
+
+
+              <div class="col-md-6">
+              <div class="input-group">
+                <label for="message">Message</label>
+              <textarea class="form-control" id="message" name="message" rows="6" cols="25"></textarea>
+              </div>
+
+              </div>
+              <div class="col-md-6">
+                  <input class="btn btn-success" type="submit" value="Send">
+              </div>
+
+            </div>
+
         </form>
 
 
             </div>
         </div>
 
+        <div class="section no-spacing">
 
 
 
+
+            <div class="row no-spacing" style="background-color: #000;">
+              <p class="footer">&copy; Tyron Wytrykowski 2017 | All Rights Reserved</p>
+            </div>
+        </div>
 
 
 
@@ -194,6 +257,7 @@
     <script type="text/javascript">
         smoothScroll.init();
     </script>
+
 </body>
 
 </html>
