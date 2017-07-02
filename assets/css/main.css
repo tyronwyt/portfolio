@@ -207,6 +207,20 @@ h1 {
   display: inline;
 }
 
+.header-social ul {
+  text-decoration: none;
+  margin-left: 50px;
+}
+
+.header-social ul li {
+  display: inline;
+  margin-right: 5px;
+}
+
+.header-social a:hover {
+  color: #26C6DA;
+}
+
 .menu-toggle {
     position: absolute;
     left: 230px;
@@ -320,7 +334,7 @@ a.btn.btn-custom:visited {
   background-color: #26C6DA;
   color: #fff;
   border-radius: 50%;
-  width: 50px;
+  width: 55px;
   margin: 30px auto;
   cursor: pointer;
   transition: all .5s;
